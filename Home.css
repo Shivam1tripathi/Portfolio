@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-color: rgb(253, 252, 252);
+}
+
+
+        /* navbar */
+
+
+
+.navbar{
+    background-color: #f1f6fb;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+.navbar{
+    box-shadow: -4px 2px 5px 1px rgba(0,0,0,0.75);
+    
+}
+.navbar .leftsection h2{
+    font-size: 2.5rem;
+    color: black;
+    margin-top: 10px;
+    transition: 0.6s;
+}
+.navbar .leftsection h2:hover{
+    font-size: 2.7rem;
+}
+.navbar .leftsection h2 span{
+    color: blueviolet;
+}
+.rightsection{
+    display: flex;
+}
+.rightsection .large{
+    display: flex;
+    flex-direction:row;
+}
+.rightsection .large li{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.rightsection .large li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(101, 81, 226);
+    font-weight: 700;
+    transition: .5s;
+}
+
+.rightsection .large li a:hover{
+    color:rgb(19, 92, 151);
+    border-bottom: 2px solid rgb(12, 99, 170);
+    border-radius: 20%;
+    border-width: 3px;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+            /*/////// Home section/////////// */
+
+
+.Home{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(187, 201, 196);
+    display: flex;
+    flex-direction: row;
+}  
+.Home .Homeleftsection{
+    
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}  
+.Home .Homeleftsection p{
+    font-size: 4rem;
+    font-weight: 600;
+}  
+.Home .Homeleftsection p span{
+    color: blueviolet;
+    
+}
+.Home .Homeleftsection #element{
+   
+    font-size: 45px;
+}
+#element{
+    font-size:3.5rem ;
+    font-weight: 600;
+    color: blueviolet;
+   
+} 
+.Homeleftsection .container{
+    width: 70%;
+    height: 250px;
+    
+}     
+.Homeleftsection .container{margin-left: 80px;}
+
+
+.Home .Homerightsection {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Home .Homerightsection img{
+    width: 290px;
+    height: 300px;
+    opacity: .9;
+}
+
+/* <!-- About-Me --> */
+
+
+.About-Me{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(153, 199, 184);
+    display: flex;
+}
+.About-Me .About-leftsection{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.About-Me .About-rightsection{
+    width:42%;
+    height: 100%;
+    margin-top: 40px;
+    font-size: x-large;
+    color: rgb(34, 78, 161);
+    display: flex;
+    flex-direction: column;
+    
+}
+.About-Me .About-rightsection h2{
+    color: rgb(175, 65, 65);
+    margin-bottom: 30px;
+}
+.About-Me .About-rightsection .button-show{
+    margin-top: 30px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+
+}
+.About-Me .button-show li{
+    list-style: none;
+}
+.About-Me .button-show li button{
+    width: 130px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 20%;
+    font-weight: 600;
+    font-size: medium;
+}
+#Skills{
+    background-color: rgb(99, 70, 202);
+}
+.About-Me .Skills li{
+    position: relative;
+    list-style: none;
+    margin-top: 15px;
+    color: black;
+}
+.About-Me .Achievements li{
+    position: relative;
+    top: -150px;
+    left: 20px;
+    list-style: none;
+    margin-top: 15px;
+    color: black;
+}
+.About-Me .Achievements{
+    visibility: hidden;
+}
+.About-Me .Achievements h5{
+    color: rgb(58, 57, 57);
+    margin-left: 60px;
+}
+.About-Me .Achievements p{
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+    margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- Competitive Ranks --> */
+
+
+.Competitive-Rank{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(187, 201, 196);
+    display:flex;
+    
+    flex-direction: column;
+}
+.Competitive-Rank .block-1{
+    width: 60%;
+    height: 15%;
+    margin-left: 40px;
+}
+
+.Competitive-Rank .block-2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Competitive-Rank .block-2 div{
+   width: 50vh;
+   height: 60vh;
+   border-radius: 30px;
+   transition: 0.7s;
+   background-color: rgb(221, 227, 230);
+   box-shadow: -1px 0px 62px 6px rgba(0,0,0,0.2);
+-webkit-box-shadow: -1px 0px 62px 6px rgba(0,0,0,0.2);
+-moz-box-shadow: -1px 0px 62px 6px rgba(0,0,0,0.2);
+}
+
+ /* //Geeks// */
+
+.Competitive-Rank .block-2 .Geeks h2{
+    margin-left: 50px;
+    margin-top: 25px;
+    font-family:fantasy;
+    color: rgb(33, 148, 67);
+    font-weight: 400;
+    font-size: 30px;
+}
+.Competitive-Rank .block-2 .Geeks img{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.Competitive-Rank .block-2 div p{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.Competitive-Rank #head{
+    font-size: 30px;
+    display: inline-block;
+    color: rgb(128, 55, 196);
+    font-family: fantasy;
+    font-weight: 200;
+    margin-top: 20px;
+}
+.Competitive-Rank .block-2 div  p a{
+    padding: 10px;
+    background-color: #41C9E2;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    left: 50px;
+    top: 40px;
+    transition: .5s;
+}
+.Competitive-Rank .block-2 div p a:hover{
+    padding:12px;
+}
+.Competitive-Rank .block-2 div:hover{
+    width: 52vh;
+   height: 61vh;
+}
+
+
+
+/* //Leetcode */
+
+.Competitive-Rank .block-2 .LeetCode h2{
+    margin-left: 90px;
+    margin-top: 20px;
+    font-family:fantasy;
+    color: rgb(179, 85, 31);
+    font-weight: 400;
+    font-size: 30px;
+}
+.Competitive-Rank .block-2 .LeetCode img{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 40px;
+    height: 40px;
+    border: .3px solid black;
+}
+
+/* //Codechef */
+
+.Competitive-Rank .block-2 .Codechef h2{
+    margin-left: 90px;
+    margin-top: 25px;
+    font-family:fantasy;
+    color: rgb(75, 29, 3);
+    font-weight: 400;
+    font-size: 30px;
+}
+.Competitive-Rank .block-2 .Codechef img{
+    margin-top: 20px;
+    margin-left: 70px;
+    
+    border: .3px solid black;
+}
+.Competitive-Rank .block-2 .Codechef p a{
+    padding: 10px;
+    background-color: #41C9E2;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    transition: .5s;
+}
+
+
+
+
+           /*projects */
+
+
+
+.Project{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(187, 201, 196);
+}
+.project-heading{
+    width: 100%;
+    height: 10vh;
+  
+}
+.project-heading h1{
+    font-size: 50px;
+    color: rgb(18, 81, 83);
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+.project-content{
+    width: 100%;
+    height: 80vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.project-content .project-1{
+    width: 60vh;
+    height: 60vh;
+    border-radius: 30px;
+    background-color: #eeeef3;
+    box-shadow: 5px 11px 101px -11px rgba(83, 77, 27, 0.8);
+-webkit-box-shadow: 5px 11px 101px -11px rgba(83, 77, 27, 0.8);
+-moz-box-shadow: 5px 11px 101px -11px rgba(83, 77, 27, 0.8);
+transition: .5s;
+    /* box-shadow: 5px 24px 138px -55px rgba(0,0,0,1);
+-webkit-box-shadow: 5px 24px 138px -55px rgba(0,0,0,1);
+-moz-box-shadow: 5px 24px 138px -55px rgba(0,0,0,1); */
+    
+}
+.project-content .project-1:hover{
+    width: 61vh;
+    height: 61vh;
+}
+.project-content .project-1 .heading h1{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 80px;
+    color:#044d37;
+}
+.project-content .project-1 ul{
+   margin-left: 20px;
+   margin-top: 40px;
+}
+.project-content .project-1 ul li p{
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.project-content .project-1 p{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.project-content .project-1 p span{
+    font-size: 25px;
+    font-weight: 500;
+    color: purple;
+}
+.project-content .project-1 .btn a{
+    text-decoration: none;
+    background-color:rgb(204, 204, 204);
+    box-shadow: 1px 6px 20px -1px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 1px 6px 20px -1px rgba(0,0,0,0.64);
+    -moz-box-shadow: 1px 6px 20px -1px rgba(0,0,0,0.64);
+    padding: 12px;
+    border-radius: 15px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    transition: 1s;
+}
+.project-content .project-1 .btn a span{
+    font-size: large;
+    margin-top: 2px;
+    margin-right: 2px;
+    color:rgb(7, 45, 70);
+    font-weight: 700;
+}
+.project-content .project-1 .btn a:hover span{
+    font-size: 20px;
+}
+.project-content .project-1 .btn a:hover{
+    padding: 15px;
+}
+.project-content .project-1 .btn{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.project-content .project-1 .btn a i{
+margin-top: 10px;
+}
+.project-content .project-1 .btn a:hover i{
+font-size: 25px;
+margin-top: 15px;
+}
+
+
+.Skill-section{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    background-color: #5e7c9b;
+}
+.Skill-section .skill-right-section{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Skill-section .skill-left-section{
+    width: 60%;
+    height: 100%;
+}
+.Skill-section .skill-left-section .skill-heading{
+
+width: 100%;
+height: 10%;
+margin-left: 20px;
+}
+.Skill-section .skill-left-section .skill-heading h1{
+    font-size: 40px;
+    color: rgb(250, 144, 15);
+    margin-top: 10px;
+}
+.Skill-section .skill-left-section .skill-heading h1 span{
+    color: rgb(172, 28, 172);
+    font-size: 35px;
+}
+.Skill-section .skill-left-section .content-box{
+    width: 100%;
+height: 23%;
+margin-top: 15px;
+margin-left: 20px;
+}
+
+.Skill-section .skill-left-section .content-box h3{
+    color: rgb(56, 52, 52);
+    margin-top: 20px;
+}
+.Skill-section .skill-left-section .content-box .container .small{
+width: 90px;
+height: 30px;
+background-color:#40837a;
+color: rgb(40, 26, 90);
+font-weight: 700;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+margin-left: 20px;
+margin-top: 20px;
+border-radius: 2px;
+}
+.Skill-section .skill-left-section .content-box .container .medium{
+    width: 140px;
+    height: 30px;
+    background-color: #40837a;
+    color:rgb(40, 26, 90);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 2px;
+    }
+.Skill-section .skill-left-section .content-box .container{
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.Skill-section .skill-left-section .content-box .container .large{
+    width: 280px;
+    color: rgb(40, 26, 90);
+    font-weight: 700;
+height: 30px;
+background-color: #40837a;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 2px;
+margin-left: 50px;
+margin-top: 20px;
+box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 1px -1px 15px -3px rgba(0, 0, 0, 0.5);
+}
+.Skill-section .skill-left-section .content-box .container{
+    display: flex;
+}
