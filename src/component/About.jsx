@@ -27,7 +27,13 @@ export default function About() {
           I strive to deliver solutions that not only meet but redefine
           expectations
         </p>
-        <button className="btn-gradient px-6 py-3">Download CV</button>
+        <a
+          href="/Shivam_Tripathi_Resume1.pdf"
+          download="Shivam_Tripathi_Resume.pdf"
+          className="btn-gradient px-6 py-3 inline-block"
+        >
+          📄 Download CV
+        </a>
       </div>
     </section>
   );

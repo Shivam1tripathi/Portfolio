@@ -14,19 +14,17 @@ export default function Navbar() {
       duration: 800,
     });
 
-    // Change navbar shadow on scroll
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    // Navbar shadow on scroll
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-gradient-to-br from-[#62393c] to-[#181e41] ${
-        scrolled ? "shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 
+      bg-gradient-to-br from-[#62393c] to-[#181e41] 
+      ${scrolled ? "shadow-lg" : "shadow-none"}`}
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
         {/* Logo */}
@@ -40,7 +38,7 @@ export default function Navbar() {
           Shivam
         </a>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Toggle Button */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-2xl text-white"
@@ -50,16 +48,20 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <ul
-          className={`absolute md:static left-0 w-full md:w-auto bg-gradient-to-b md:bg-transparent 
-          flex flex-col md:flex-row gap-5 p-5 md:p-0 transition-all duration-500 
-          ${open ? "top-14" : "-top-96"}`}
+          className={`absolute md:static left-0 w-full md:w-auto 
+          flex flex-col md:flex-row gap-5 p-5 md:p-0 transition-all duration-500
+          ${open ? "top-16 opacity-100" : "-top-96 opacity-0"}
+          md:opacity-100 bg-[#181e41]/95 md:bg-transparent rounded-b-lg shadow-lg md:shadow-none`}
         >
           {["Home", "About", "Projects", "Experience", "TechStack"].map(
             (item, i) => (
-              <li key={i}>
+              <li
+                key={i}
+                className="border-b md:border-none border-[#2a2a40] last:border-none"
+              >
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="text-white hover:text-[#ec9956] transition"
+                  className="block text-white px-3 py-2 rounded-md hover:bg-[#ec9956]/20 hover:text-[#ec9956] transition"
                   onClick={() => setOpen(false)}
                 >
                   {item}
@@ -70,11 +72,12 @@ export default function Navbar() {
         </ul>
 
         {/* Contact Button */}
-        <li>
-          <a href="#contact" className="btn-gradient px-5 py-2 rounded-full">
-            Contact
-          </a>
-        </li>
+        <a
+          href="#contact"
+          className="hidden md:block btn-gradient px-5 py-2 rounded-full"
+        >
+          Contact
+        </a>
       </div>
     </nav>
   );

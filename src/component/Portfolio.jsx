@@ -73,7 +73,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-5 py-24">
+    <section id="projects" className="max-w-6xl mx-auto px-5 py-4">
       {/* Title */}
       <h2 className="portfolio-title text-white text-3xl font-bold text-center mb-4">
         My Portfolio
