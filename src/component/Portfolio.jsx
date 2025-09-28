@@ -15,7 +15,7 @@ const fullstackImages = [
   {
     image: p6,
     github: "https://github.com/Shivam1tripathi/Creator_Dashboard",
-    demo: "https://lynkr-whjz.onrender.com/",
+    demo: "https://lynkr-whjz.onrender.com/login",
     title: "Linkkr (Social Media website)",
   },
   {
