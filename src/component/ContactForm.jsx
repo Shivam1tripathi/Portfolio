@@ -4,11 +4,11 @@ import { RiSendPlaneFill } from "react-icons/ri";
 
 const ContactForm = () => {
   const form = useRef();
-  const [loading, setLoading] = useState(false); // ✅ state for button disable
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true); // ✅ disable button while sending
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -21,21 +21,32 @@ const ContactForm = () => {
         () => {
           alert("✅ Message Sent Successfully!");
           form.current.reset();
-          setLoading(false); // ✅ re-enable after success
+          setLoading(false);
         },
         (error) => {
           alert("❌ Failed to send. Try again later.");
           console.error(error.text);
-          setLoading(false); // ✅ re-enable after error
+          setLoading(false);
         }
       );
   };
 
   return (
     <section id="contact" className="max-w-4xl mx-auto px-5 py-20">
-      <h2 className="text-3xl font-bold text-center text-[#ec9956] mb-10 flex justify-center items-center gap-2">
+      <h2 className="text-3xl font-bold text-center text-[#ec9956] mb-5 flex justify-center items-center gap-2">
         📬 Get in Touch
       </h2>
+
+      {/* Display Email */}
+      <p className="text-center text-white mb-8">
+        Or email me directly at:{" "}
+        <a
+          href="mailto:shivamtripathi504@gmail.com"
+          className="text-[#ec9956] underline"
+        >
+          shivamtripathi504@gmail.com
+        </a>
+      </p>
 
       <form
         ref={form}
@@ -99,7 +110,7 @@ const ContactForm = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          disabled={loading} // ✅ disable while sending
+          disabled={loading}
           className={`w-full cursor-pointer flex justify-center items-center gap-2 py-3 rounded-lg font-semibold text-lg text-white 
             ${
               loading

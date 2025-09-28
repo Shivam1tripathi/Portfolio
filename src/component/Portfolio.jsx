@@ -7,10 +7,17 @@ import p2 from "../assets/portfolio/Book_My_Clone_App.png";
 import p3 from "../assets/portfolio/Intrective_commentsection.png";
 import p4 from "../assets/portfolio/HR_Management.png";
 import p5 from "../assets/portfolio/resturentlisting.png";
+import p6 from "../assets/portfolio/Linkkr.png";
 
 import FlipCard from "./FlipCard";
 
 const fullstackImages = [
+  {
+    image: p6,
+    github: "https://github.com/Shivam1tripathi/Creator_Dashboard",
+    demo: "https://lynkr-whjz.onrender.com/",
+    title: "Linkkr (Social Media website)",
+  },
   {
     image: p1,
     github: "https://github.com/Shivam1tripathi/Shopit",
