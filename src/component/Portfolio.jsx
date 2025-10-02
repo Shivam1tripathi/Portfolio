@@ -32,9 +32,9 @@ const fullstackImages = [
   },
   {
     image: p5,
-    github: "https://github.com/Shivam1tripathi/Resturent_listing",
+    github: "https://github.com/Shivam1tripathi/Restaurant_listing",
     demo: "https://www.loom.com/share/4540d9e3db7f480dabd191979fa2aed6?sid=2798f650-deb8-4f53-badf-50ecc7e4a5e8",
-    title: "Resturent Listing",
+    title: "Restaurant Listing",
   },
 ];
 const frontendImages = [
