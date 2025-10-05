@@ -28,7 +28,7 @@ export default function About() {
           expectations
         </p>
         <a
-          href="/Shivam_Tripathi_Resume"
+          href="/Shivam_Tripathi_Resume.pdf"
           download="Shivam_Tripathi_Resume.pdf"
           className="btn-gradient px-6 py-3 inline-block"
         >
